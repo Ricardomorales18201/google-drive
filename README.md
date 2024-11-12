@@ -1,4 +1,4 @@
-Google Drive Integration Application
+*Google Drive Integration Application*
 This Angular application allows users to interact with their Google Drive accounts to view, upload, download, and delete files through Google OAuth. Styled with Tailwind CSS, it provides a responsive and user-friendly experience.
 
 Table of Contents
