@@ -1,4 +1,4 @@
-**_*Google Drive Integration Application*_******
+**_*Google Drive Integration Application*_**
 
 This Angular application allows users to interact with their Google Drive accounts to view, upload, download, and delete files through Google OAuth. Styled with Tailwind CSS, it provides a responsive and user-friendly experience.
 
@@ -31,7 +31,7 @@ Install Dependencies:_
 
 _npm install_
 
-**Configure OAuth:**__
+**Configure OAuth:**
 
 Open src/app/services/google-drive.service.ts.
 
@@ -44,13 +44,13 @@ ng serve
 
 Visit the app at _http://localhost:4200._
 
-**Run Unit Tests:**__
+**Run Unit Tests:**
 
 
 ng test
 
 
-**Assumptions and Design Decisions**__
+**Assumptions and Design Decisions**
 
 Google Authentication: Google OAuth 2.0 is implemented to securely authenticate users.
 
