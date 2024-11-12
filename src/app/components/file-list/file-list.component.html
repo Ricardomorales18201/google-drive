@@ -1,0 +1,45 @@
+<h2 class="text-2xl font-semibold text-gray-800 mb-6">Google Drive Files</h2>
+
+<div class="mb-4">
+  <label class="block text-sm font-medium text-gray-600">Upload a File</label>
+  <input type="file" (change)="uploadFile($event)" class="mt-2 border border-gray-300 rounded-md p-2 w-full sm:w-auto" />
+</div>
+
+<!-- Table for displaying Google Drive files -->
+<div class="overflow-hidden shadow rounded-lg">
+  <table class="min-w-full bg-white">
+    <thead>
+      <tr>
+        <th class="px-6 py-3 border-b border-gray-200 bg-gray-100 text-left text-xs font-medium text-gray-600 uppercase tracking-wider">
+          File Name
+        </th>
+        <th class="px-6 py-3 border-b border-gray-200 bg-gray-100 text-left text-xs font-medium text-gray-600 uppercase tracking-wider">
+          Last Modified
+        </th>
+        <th class="px-6 py-3 border-b border-gray-200 bg-gray-100 text-center text-xs font-medium text-gray-600 uppercase tracking-wider">
+          Actions
+        </th>
+      </tr>
+    </thead>
+    <tbody class="bg-white divide-y divide-gray-200">
+      <tr *ngFor="let file of files; trackBy: trackById">
+        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800">
+          {{ file.name }}
+        </td>
+        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+          {{ file.modifiedTime | date: 'medium' }}
+        </td>
+        <td class="px-6 py-4 whitespace-nowrap text-center">
+          <button (click)="downloadFile(file.id)"
+                  class="text-sm text-white bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-md mr-2">
+            Download
+          </button>
+          <button (click)="deleteFile(file.id)"
+                  class="text-sm text-white bg-red-500 hover:bg-red-600 px-4 py-2 rounded-md">
+            Delete
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

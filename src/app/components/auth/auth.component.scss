@@ -1,0 +1,75 @@
+.auth-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: white;
+  }
+  
+  .google-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px 24px;
+    background: #fff;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #3c4043;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .google-btn:hover {
+    background: #f8f9fa;
+    border-color: #dadce0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .google-icon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .signout-btn {
+    padding: 10px 20px;
+    background: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .signout-btn:hover {
+    background: #c82333;
+  }
+  
+  .authenticated-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .drive-content {
+    margin-top: 2rem;
+  }
+  
+  h2 {
+    color: #1a73e8;
+    font-size: 24px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .files-grid {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+  }
+  
